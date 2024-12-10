@@ -44,7 +44,7 @@ try:
         except Exception as e:
             faceoff_text = "N/A"
             print(f"Error finding element for {url}: {e}")
-
+            
         # Extract Item ID
         item_id = url.split("sku=")[-1].split("#")[0] if "sku=" in url else "Unknown"
         
